@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="editor-container"><h1><u>Text Editor</u></h1></div>
+
+   
+    
+        <div class="controls">
+            <!-- Font Size -->
+            <button id="decreaseSize">-</button>
+            <button id="increaseSize">+</button>
+
+            <!-- Alignment dropdown -->
+            <select id="alignmentDropdown">
+                <option value="justifyLeft">Left</option>
+                <option value="justifyCenter">Center</option>
+                <option value="justifyRight">Right</option>
+                <option value="justifyFull">Justify</option>
+            </select>
+
+            
+        
+            <!-- Font Style Dropdown -->
+            <select id="fontStyle">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+
+            <!-- Bold/Italic Dropdown -->
+            <select id="textStyle">
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+                <option value="italic">Italic</option>
+                <option value="bold italic">Bold + Italic</option>
+            </select>
+
+            <!-- Text Color -->
+            <input type="color" id="textColor">
+        </div>
+
+        <!-- Text Area for Editing -->
+        <div id="textArea" class="text-area" contenteditable="true">
+            Welcome to the Text Editor of Programming World.
+        </div>
+    </div> 
+
+    <script src="index.js"></script>
+</body>
+</html>
